@@ -1,0 +1,175 @@
+{
+	"variables": [],
+	"info": {
+		"name": "express-project1",
+		"_postman_id": "7639ea32-36be-f40a-978c-5f8e4aaa35c7",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users[read]",
+			"request": {
+				"url": "http://localhost:8080/users",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "users"
+			},
+			"response": []
+		},
+		{
+			"name": "posts[read]",
+			"request": {
+				"url": "http://localhost:8080/posts",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "users"
+			},
+			"response": []
+		},
+		{
+			"name": "users[read by id]",
+			"request": {
+				"url": "http://localhost:8080/users/62a7d4594339d04e8a43b6a8",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "users"
+			},
+			"response": []
+		},
+		{
+			"name": "posts[read by id]",
+			"request": {
+				"url": "http://localhost:8080/posts/62a7ddf11c09af99a04ebcca",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "users"
+			},
+			"response": []
+		},
+		{
+			"name": "users[create]",
+			"request": {
+				"url": "http://localhost:8080/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"user3\", \"password\": \"password123\", \"email\": \"user2@email.com\"}"
+				},
+				"description": "users"
+			},
+			"response": []
+		},
+		{
+			"name": "posts[create]",
+			"request": {
+				"url": "http://localhost:8080/posts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\": \"title1\", \"description\": \"some desc\", \"body\": \"content\", \"authorId\": \"62a7d310a0c896a6abd7c523\"}"
+				},
+				"description": "users"
+			},
+			"response": []
+		},
+		{
+			"name": "users[update]",
+			"request": {
+				"url": "http://localhost:8080/users/62a7d2cd6a9e5050a53b8920",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"use1\", \"password\": \"password123\", \"email\": \"user1@email.com\"}"
+				},
+				"description": "users"
+			},
+			"response": []
+		},
+		{
+			"name": "posts[update]",
+			"request": {
+				"url": "http://localhost:8080/posts/62a7ddf11c09af99a04ebcca",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\": \"title11\", \"description\": \"some desc\", \"body\": \"content\"}"
+				},
+				"description": "users"
+			},
+			"response": []
+		},
+		{
+			"name": "users[delete]",
+			"request": {
+				"url": "http://localhost:8080/users/62a7d2cd6a9e5050a53b8920",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "users"
+			},
+			"response": []
+		},
+		{
+			"name": "posts[delete]",
+			"request": {
+				"url": "http://localhost:8080/users/62a7d2cd6a9e5050a53b8920",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "users"
+			},
+			"response": []
+		}
+	]
+}
